@@ -54,11 +54,32 @@ Suspense, `lazy` / динамические импорты, оптимизаци
 
 ---
 
+## 🛠 Технический стек
+
+Проект инициализирован через **Vite** с шаблоном `react` (HMR + ESLint).
+
+Официальные плагины React для Vite:
+
+- [`@vitejs/plugin-react`](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) — использует [Oxc](https://oxc.rs)
+- [`@vitejs/plugin-react-swc`](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) — использует [SWC](https://swc.rs/)
+
+### Запуск проекта
+
+```bash
+npm install      # установка зависимостей
+npm run dev      # дев-сервер с HMR
+npm run build    # production-сборка
+npm run preview  # предпросмотр сборки
+```
+
+---
+
 ## 🗂 Домашние задания
 
 | HW   | Тема                       | Статус      |
 | ---- | -------------------------- | ----------- |
-| HW-1 | Git-flow: ветка, PR, merge | 🟢 В работе |
+| HW-1 | Git-flow: ветка, PR, merge | ✅ Готово   |
+| HW-2 | Git-flow: ветка, PR, merge | 🟢 В работе |
 
 ---
 
