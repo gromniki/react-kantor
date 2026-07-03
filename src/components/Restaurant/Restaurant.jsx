@@ -1,21 +1,16 @@
-export const Restaurant = ({ restaurant }) => {
+import { Menu } from '../Menu/Menu';
+import { Reviews } from '../Reviews/Reviews';
+
+export const Restaurant = ({ name, menu, reviews }) => {
+  if (!name) {
+    return null;
+  }
+
   return (
     <li>
-      <h2>{restaurant.name}</h2>
-
-      <h3>Меню</h3>
-      <ul>
-        {restaurant.menu.map((dish) => (
-          <li key={dish.id}>{dish.name}</li>
-        ))}
-      </ul>
-
-      <h3>Отзывы</h3>
-      <ul>
-        {restaurant.reviews.map((review) => (
-          <li key={review.id}>{review.text}</li>
-        ))}
-      </ul>
+      <h2>{name}</h2>
+      {menu.length ? <Menu title="Меню" menu={menu} /> : null}
+      {reviews.length ? <Reviews title="Отзывы" reviews={reviews} /> : null}
     </li>
   );
 };
