@@ -7,8 +7,8 @@ export const Restaurant = ({ name, menu, reviews }) => {
   }
 
   return (
-    <li>
-      <h2>{name}</h2>
+    <li className="restaurants__item restaurants-item">
+      <h3>{name}</h3>
       {menu?.length ? <Menu title="Меню" menu={menu} /> : null}
       {reviews?.length ? <Reviews title="Отзывы" reviews={reviews} /> : null}
     </li>
