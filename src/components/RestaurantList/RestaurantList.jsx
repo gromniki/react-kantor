@@ -26,13 +26,11 @@ export const RestaurantList = () => {
       </div>
 
       {activeRestaurant && (
-        <ul className="restaurants__list">
-          <Restaurant
-            name={activeRestaurant.name}
-            menu={activeRestaurant.menu}
-            reviews={activeRestaurant.reviews}
-          />
-        </ul>
+        <Restaurant
+          name={activeRestaurant.name}
+          menu={activeRestaurant.menu}
+          reviews={activeRestaurant.reviews}
+        />
       )}
     </section>
   );
