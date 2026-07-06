@@ -7,10 +7,10 @@ export const Restaurant = ({ name, menu, reviews }) => {
   }
 
   return (
-    <li>
-      <h2>{name}</h2>
+    <article className="restaurants__item  place">
+      <h3>{name}</h3>
       {menu?.length ? <Menu title="Меню" menu={menu} /> : null}
       {reviews?.length ? <Reviews title="Отзывы" reviews={reviews} /> : null}
-    </li>
+    </article>
   );
 };
