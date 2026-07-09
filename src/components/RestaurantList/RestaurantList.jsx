@@ -27,6 +27,7 @@ export const RestaurantList = () => {
 
       {activeRestaurant && (
         <Restaurant
+          activeId={activeId}
           name={activeRestaurant.name}
           menu={activeRestaurant.menu}
           reviews={activeRestaurant.reviews}

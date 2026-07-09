@@ -80,7 +80,8 @@ npm run preview  # предпросмотр сборки
 | ---- | -------------------------- | ----------- |
 | HW-1 | Git-flow: ветка, PR, merge | ✅ Готово   |
 | HW-2 | Git-flow: ветка, PR, merge | ✅ Готово   |
-| HW-3 | Git-flow: ветка, PR, merge | 🟢 В работе |
+| HW-3 | Git-flow: ветка, PR, merge | ✅ Готово   |
+| HW-4 | Git-flow: ветка, PR, merge | 🟢 В работе |
 
 ---
 
