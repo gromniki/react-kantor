@@ -12,7 +12,6 @@ export const Restaurant = ({ activeId, name, menu, reviews }) => {
       <h3>{name}</h3>
       {menu?.length ? <Menu title="Меню" menu={menu} /> : null}
       {reviews?.length ? <Reviews title="Отзывы" reviews={reviews} /> : null}
-      <hr />
       <ReviewForm key={activeId} />
     </article>
   );
