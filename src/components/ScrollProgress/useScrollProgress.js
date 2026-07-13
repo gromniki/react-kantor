@@ -19,6 +19,4 @@ export const useScrollProgress = () => {
   }, []);
 
   return progress;
-
-  // return <div style={{ position: 'fixed', top: 0 }}></div>;
 };
