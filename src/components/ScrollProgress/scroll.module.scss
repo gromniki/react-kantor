@@ -1,0 +1,10 @@
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  height: 3px;
+  background: #0b7ea4;
+
+  &--active {
+    background: green;
+  }
+}
