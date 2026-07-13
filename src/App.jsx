@@ -1,11 +1,14 @@
 import { Layout } from './components/Layout/Layout';
 import { RestaurantList } from './components/RestaurantList/RestaurantList';
+import { ThemeProvider } from './components/ThemeProvider/ThemeProvider';
 
 const App = () => {
   return (
-    <Layout>
-      <RestaurantList />
-    </Layout>
+    <ThemeProvider>
+      <Layout>
+        <RestaurantList />
+      </Layout>
+    </ThemeProvider>
   );
 };
 
